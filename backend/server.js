@@ -17,13 +17,17 @@ app.use(express.json()); // Allows the app to accept JSON in the request body
 app.use("/api/auth", require("./routes/auth"));
 app.use("/api/scan", require("./routes/scan"));
 app.use("/api/user", require("./routes/user"));
-app.use('/api/email', require('./routes/email'));
-app.use('/api/admin', require('./routes/admin'));
-app.use('/api/list', require('./routes/list'));
+app.use("/api/email", require("./routes/email"));
+app.use("/api/admin", require("./routes/admin"));
+app.use("/api/list", require("./routes/list"));
 
 // A simple route to check if the API is up and running
 app.get("/", (req, res) => res.send("API is running..."));
 
 const PORT = process.env.PORT || 5000;
 
-app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
+if (process.env.NODE_ENV !== "production") {
+  app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
+}
+
+module.exports = app;
