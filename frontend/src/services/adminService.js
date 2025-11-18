@@ -1,9 +1,9 @@
-import axios from 'axios';
+import axios from "axios";
 
-const API_URL = 'http://localhost:5000/api/admin';
+const API_URL = "https://smart-guard-13.vercel.app/api";
 
 const getAuthHeaders = (token) => ({
-  headers: { 'x-auth-token': token },
+  headers: { "x-auth-token": token },
 });
 
 const getSiteStats = (token) => {

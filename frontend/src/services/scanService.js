@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api/scan';
+const API_URL = 'http://smart-guard-13.vercel.app/api/scan';
 
 // Function to scan a URL
 const scanUrl = (url, token) => {

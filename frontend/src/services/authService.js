@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // The base URL for our backend API
-const API_URL = 'http://localhost:5000/api/auth';
+const API_URL = 'http://smart-guard-13.vercel.app/api/auth';
 
 // Register user
 const register = (email, password) => {

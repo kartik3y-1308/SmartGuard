@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api/email';
+const API_URL = 'http://smart-guard-13.vercel.app/api/email';
 
 const checkEmail = (email, token) => {
   const config = {
