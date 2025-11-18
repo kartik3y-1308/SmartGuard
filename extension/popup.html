@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Web Security Shield</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+
+  <div id="login-view">
+    <h3>Login Required</h3>
+    <form id="login-form">
+      <input type="email" id="email-input" placeholder="Email" required>
+      <input type="password" id="password-input" placeholder="Password" required>
+      <button type="submit">Login</button>
+      <div id="login-message"></div>
+    </form>
+  </div>
+
+  <div id="manager-view">
+    
+    <div id="settings-bar">
+      <button id="settings-btn" title="Open Profile & Settings">Settings</button>
+      <button id="logout-btn">Logout</button>
+    </div>
+    
+    <div class="toggle-container">
+      <label for="enabled-toggle">Active Scanning</label>
+      <label class="toggle-switch">
+        <input type="checkbox" id="enabled-toggle">
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="toggle-container">
+      <label for="adult-toggle">Block 18+ Sites</label>
+      <label class="toggle-switch">
+        <input type="checkbox" id="adult-toggle">
+        <span class="slider"></span>
+      </label>
+    </div>
+    <button id="manage-lists-btn">Manage Blocklist & Whitelist</button>
+
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+# Dependencies
+/node_modules
+/dist
+/build
+
+# Backend Secrets (CRITICAL)
+.env
+
+
+# Logs
+npm-debug.log
+yarn-error.log
